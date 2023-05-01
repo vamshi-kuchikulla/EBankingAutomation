@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="E-Commerce Website All Test Suite">
+    <test thread-count="5" preserve-order="true" name="userRegistrationAutomationTest">
+        <classes>
+            <class name="org.cst.testCases.TC_RegisterTest">
+                <methods>
+                    <include name="registerUser"/>
+                </methods>
+            </class>
+            <class name="org.cst.testCases.TC_LoginTest">
+                <methods>
+                    <include name="userLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
